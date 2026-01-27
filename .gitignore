@@ -97,3 +97,6 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+12_Lord/Library
+12_Lord/Temp
+12_Lord/Packages/Pack/googlesheet-importer-main-main
