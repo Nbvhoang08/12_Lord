@@ -1,0 +1,33 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BuildingManager : Singleton<BuildingManager>
+{
+    [SerializeField] private GameObject PopUpPrefab;
+    [SerializeField] private Transform PopUpParent;
+    public int wood, stone, iron;
+
+    public override void Awake()
+    {
+        base.Awake();
+        ResourceBuilding.OnCollectAll += AddResource;
+    }
+
+    private void AddResource(ResourceBuilding building, int amount)
+    {
+        switch (building.buildingData.resourceType)
+        {
+            case ResourceType.Wood: wood += amount; break;
+            case ResourceType.Stone: stone += amount; break;
+            case ResourceType.Iron: iron += amount; break;
+        }
+        GameObject go = Instantiate(PopUpPrefab, PopUpParent);
+
+        UIPopUp popUpScript = go.GetComponent<UIPopUp>();
+        if (popUpScript != null)
+        {
+            popUpScript.SetupPopUp(amount, building.buildingData.buildingIcon, building.buildingData.resourceType);
+        }
+    }
+}
