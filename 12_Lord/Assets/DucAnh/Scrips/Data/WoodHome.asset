@@ -19,3 +19,5 @@ MonoBehaviour:
     upgradeCost: 0
     buildTime: 0
     capacity: 0
+    productionValue: 10
+  buildingIcon: {fileID: 21300000, guid: a2786822d58445e4cb8e8ede0f59cb67, type: 3}

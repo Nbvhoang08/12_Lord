@@ -22,7 +22,7 @@ public class BuildingManager : Singleton<BuildingManager>
             case ResourceType.Stone: stone += amount; break;
             case ResourceType.Iron: iron += amount; break;
         }
-        GameObject go = Instantiate(PopUpPrefab, PopUpParent);
+        GameObject go = Instantiate(PopUpPrefab, building.transform.position, Quaternion.identity, PopUpParent);
 
         UIPopUp popUpScript = go.GetComponent<UIPopUp>();
         if (popUpScript != null)

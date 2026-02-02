@@ -7,7 +7,6 @@ public class UIPopUp : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI amountText;
     [SerializeField] private Image iconDisplay;
-    [SerializeField] private CanvasGroup canvasGroup;
 
     public void SetupPopUp(int amount, Sprite icon, ResourceType type)
     {
@@ -19,7 +18,6 @@ public class UIPopUp : MonoBehaviour
         }
 
         // Logic DOTween (Giữ nguyên của bạn)
-        transform.DOMoveY(transform.position.y + 100f, 1.2f).SetEase(Ease.OutQuad);
-        canvasGroup.DOFade(0, 1.2f).SetDelay(0.3f).OnComplete(() => Destroy(gameObject));
+        transform.DOMoveY(transform.position.y + 1f, 1f).SetEase(Ease.OutQuad);
     }
 }
