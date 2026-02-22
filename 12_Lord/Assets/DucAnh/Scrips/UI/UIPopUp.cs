@@ -18,6 +18,6 @@ public class UIPopUp : MonoBehaviour
         }
 
         // Logic DOTween (Giữ nguyên của bạn)
-        transform.DOMoveY(transform.position.y + 1f, 1f).SetEase(Ease.OutQuad);
+        transform.DOMoveY(transform.position.y + 1f, 0.7f).SetEase(Ease.OutQuad);
     }
 }

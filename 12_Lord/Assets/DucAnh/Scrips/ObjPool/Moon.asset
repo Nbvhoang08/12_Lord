@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732524add57b8a1418e5a500faff1782, type: 3}
+  m_Name: Moon
+  m_EditorClassIdentifier: 
+  moonEffect: {fileID: -381201521968701161, guid: 4260c24ddf5749748ac88f0b7102e955, type: 3}

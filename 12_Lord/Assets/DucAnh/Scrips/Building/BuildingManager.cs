@@ -28,6 +28,7 @@ public class BuildingManager : Singleton<BuildingManager>
         if (popUpScript != null)
         {
             popUpScript.SetupPopUp(amount, building.buildingData.buildingIcon, building.buildingData.resourceType);
+            GameManager.Instance.objectPool.GetMoonEffect(building.transform.position, building.transform.rotation, building.transform);
         }
     }
 }
