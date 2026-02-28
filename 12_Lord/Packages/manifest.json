@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.nabagame.core": "file:Pack/core-main-main/core-main-main",
+    "com.nabagame.googlesheet.importer": "file:Pack/googlesheet-importer-main-main/googlesheet-importer-main-main",
     "com.nabagame.ui": "file:Pack/ui-main-main/ui-main-main",
     "com.unity.collab-proxy": "2.11.2",
     "com.unity.feature.2d": "2.0.1",

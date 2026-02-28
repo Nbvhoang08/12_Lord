@@ -8,6 +8,12 @@
         "com.unity.textmeshpro": "3.0.6"
       }
     },
+    "com.nabagame.googlesheet.importer": {
+      "version": "file:Pack/googlesheet-importer-main-main/googlesheet-importer-main-main",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.nabagame.ui": {
       "version": "file:Pack/ui-main-main/ui-main-main",
       "depth": 0,

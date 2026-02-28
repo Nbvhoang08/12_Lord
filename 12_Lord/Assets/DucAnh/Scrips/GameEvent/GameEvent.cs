@@ -1,13 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
+using NabaGame.Core.Runtime.EventManager;
 
-public class GameEvent
+public class OnSkipDayEvent : GameEvent 
 {
-    public static Action OnSkipDay;
-    public static void TriggerSkipDay()
+    public OnSkipDayEvent() 
     {
-        OnSkipDay?.Invoke();
+    
+    }
+}
+
+
+public class OnChangeResource: GameEvent 
+{
+    int resourceQuanty;
+    public OnChangeResource(int qty)
+    {
+        resourceQuanty = qty;
     }
 }

@@ -1,13 +1,15 @@
 using UnityEngine;
 using DG.Tweening;
+using Sirenix.OdinInspector;
 
 public class MoonEffect : MonoBehaviour
 {
+
     private void OnEnable()
     {
         Play();
     }
-
+    [Button]
     void Play()
     {
         Sequence seq = DOTween.Sequence()
@@ -18,7 +20,7 @@ public class MoonEffect : MonoBehaviour
 
         seq.OnComplete(() =>
         {
-            GameManager.Instance.objectPool.ReturnMoonEffect(this);
+            //GameManager.Instance.objectPool.ReturnMoonEffect(this);
         });
     }
 

@@ -1,5 +1,6 @@
 using UnityEngine;
 using DG.Tweening;
+using Sirenix.OdinInspector;
 
 public class SunParabolaEffect : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class SunParabolaEffect : MonoBehaviour
         Play();
     }
 
+    [Button]
     public void Play()
     {
         rect.anchoredPosition = startPos;

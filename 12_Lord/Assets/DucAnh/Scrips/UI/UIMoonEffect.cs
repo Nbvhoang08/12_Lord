@@ -1,11 +1,14 @@
+using NabaGame.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIMoonEffect : UICanvas
+public class UIMoonEffect : BaseUI
 {
+    
     void Start()
     {
-        UIManager.Instance.CloseUI<UIMoonEffect>(2.5f);
+       
     }
+
 }
